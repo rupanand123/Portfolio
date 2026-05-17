@@ -17,6 +17,43 @@
   }
 }
 
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  nav, footer, .section-label, button, .no-print {
+    display: none !important;
+  }
+  main {
+    padding-top: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+  .editorial-grid {
+    display: block !important;
+  }
+  h1 {
+    font-size: 40pt !important;
+    color: black !important;
+    margin-bottom: 20pt !important;
+  }
+  .text-white\/40, .text-white\/20, .text-white\/60 {
+    color: #444 !important;
+  }
+  .text-brand-primary {
+    color: black !important;
+  }
+  .border-white\/10, .border-white\/5 {
+    border-color: #eee !important;
+  }
+  section {
+    page-break-inside: avoid;
+    border-top: 1px solid #eee !important;
+    padding: 20pt 0 !important;
+  }
+}
+
 .section-label {
   @apply text-[11px] uppercase tracking-[0.2em] text-brand-primary mb-4 block font-bold;
 }
